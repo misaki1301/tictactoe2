@@ -141,8 +141,8 @@
 		AD994A6A2A1D0E4900EB334C /* tictactoe2 */ = {
 			isa = PBXGroup;
 			children = (
-				AD271FB42A1EAC1C00E9C0CA /* ViewModels */,
 				AD271FB02A1E901400E9C0CA /* Info.plist */,
+				AD271FB42A1EAC1C00E9C0CA /* ViewModels */,
 				AD271FB12A1E91DD00E9C0CA /* Models */,
 				AD271FA52A1E8F9E00E9C0CA /* Fonts */,
 				AD994A7E2A1D16EF00EB334C /* Views */,

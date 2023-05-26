@@ -20,7 +20,7 @@ class TicTacViewModel: ObservableObject {
 	]
 	
 	private func playerByScore(shape: Score) -> Player {
-		var player: Player = shape == .nought ? .first : .second
+		let player: Player = shape == .nought ? .first : .second
 		return player
 	}
 
@@ -32,44 +32,28 @@ class TicTacViewModel: ObservableObject {
 			var rightDiagonalWinner = Array(repeating: Score.empty, count: 3)
 			
 			for (indexY, y) in matrixArray.enumerated() {
-				//var currentCol = y[indexY]
 				leftDiagonalWinner[indexY] = matrixArray[indexY][indexY]
 				rightDiagonalWinner[indexY] = matrixArray[indexY][(matrixArray.count - 1) - indexY]
 				for (indexX, x) in y.enumerated() {
-					//var current = x
 					horizontalWinner[indexX] = x
-					print("\(indexX) \(indexY)")
+					//print("\(indexX) \(indexY)")
 					verticalWinner[indexX] = matrixArray[indexX][indexY]
 					if indexX == 2 {
-						//print("vertical")
-						//print(verticalWinner)
 						if verticalWinner.allSatisfy({$0 == .cross}) || verticalWinner.allSatisfy({$0 == .nought}) {
-							//vertical winner
-							//winner = verticalWinner[0] == .nought ? .second : .first
 							winner = playerByScore(shape: verticalWinner[0])
 							break
 						}
 						if horizontalWinner.allSatisfy({$0 == .cross}) || horizontalWinner.allSatisfy({$0 == .nought}) {
-							//winner horizontal
-							//winner = horizontalWinner[0] == .nought ? .second : .first
 							winner = playerByScore(shape: horizontalWinner[0])
 							break
 						}
 					}
 					if indexY == 2 {
-						/*print("diagonalleft")
-						print(leftDiagonalWinner)*/
-						print("diagonalRight")
-						print(rightDiagonalWinner)
-						//print("horizontal")
-						//print(horizontalWinner)
 						if rightDiagonalWinner.allSatisfy({$0 == .nought}) || rightDiagonalWinner.allSatisfy({$0 == .cross}) {
-							//winner = rightDiagonalWinner[0] == .nought ? .second : .first
 							winner = playerByScore(shape: rightDiagonalWinner[0])
 							break
 						}
 						if leftDiagonalWinner.allSatisfy({$0 == .nought}) || leftDiagonalWinner.allSatisfy({$0 == .cross}) {
-							//winner = leftDiagonalWinner[0] == .nought ? .second : .first
 							winner = playerByScore(shape: leftDiagonalWinner[0])
 							break
 						}
@@ -84,7 +68,6 @@ class TicTacViewModel: ObservableObject {
 		let currentMatrixValue = matrixArray[column][row]
 		
 		if case .empty = currentMatrixValue {
-			//let selectedSquare = matrixArray[column][row]
 			if case .first = currentPlayer {
 				matrixArray[column][row] = .nought
 				currentPlayer = .second
@@ -93,7 +76,7 @@ class TicTacViewModel: ObservableObject {
 				matrixArray[column][row] = .cross
 				currentPlayer = .first
 			}
-			print(currentPlayer)
+			//print(currentPlayer)
 			turnCount += 1
 			if turnCount >= 5 {
 				winner = checkWinner()
