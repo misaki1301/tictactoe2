@@ -25,7 +25,7 @@ final class tictactoe2Tests: XCTestCase {
 			[.nought, .nought, .cross]
 		]
 		let result = viewModel.checkWinner()
-		XCTAssertEqual(result, .first)
+		XCTAssertEqual(result, .second)
 	}
 	
 	func testWinnerVertical() throws {
@@ -36,7 +36,7 @@ final class tictactoe2Tests: XCTestCase {
 			[.nought, .nought, .cross]
 		]
 		let result = viewModel.checkWinner()
-		XCTAssertEqual(result, .second)
+		XCTAssertEqual(result, .first)
 	}
 	
 	func testWinnerDiagonalLeft() throws {
@@ -44,10 +44,10 @@ final class tictactoe2Tests: XCTestCase {
 		viewModel.matrixArray = [
 			[.nought, .cross, .cross],
 			[.nought, .nought, .empty],
-			[.nought, .nought, .nought]
+			[.empty, .nought, .nought]
 		]
 		let result = viewModel.checkWinner()
-		XCTAssertEqual(result, .second)
+		XCTAssertEqual(result, .first)
 	}
 	
 	func testWinnerDiagonalRight() throws {
@@ -58,7 +58,7 @@ final class tictactoe2Tests: XCTestCase {
 			[.cross, .nought, .nought]
 		]
 		let result = viewModel.checkWinner()
-		XCTAssertEqual(result, .first)
+		XCTAssertEqual(result, .second)
 	}
 	
 

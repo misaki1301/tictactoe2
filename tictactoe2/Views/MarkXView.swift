@@ -43,7 +43,7 @@ struct MarkCircleView: View {
 				Spacer()
 				ZStack {
 					//Color.red
-					Path(ellipseIn: CGRect(x: 0, y: 0, width: width * 0.75, height: width * 0.75))
+					Path(ellipseIn: CGRect(x: 0, y: 0, width: width, height: width))
 						.stroke(Color.white, lineWidth: 6)
 				}
 				Spacer()

@@ -66,8 +66,8 @@ struct MatrixView: View {
 							if case .nought = item {
 								MarkCircleView()
 									.frame(width: blockSize, height: blockSize)
-//									.padding(.horizontal, 16)
-//									.padding(.vertical, 16)
+									//.padding(.top, 2)
+									//.padding(.leading, 2)
 							}
 							if case .empty = item {
 								ZStack {
@@ -98,8 +98,10 @@ struct ModalWinnerView: View {
 			HStack {
 				Image(systemName: "person.circle")
 				VStack {
-					Text("Ganador")
-						.font(.custom("Poppins-Regular", size: 57))
+					if winner != .tie {
+						Text("Ganador")
+							.font(.custom("Poppins-Regular", size: 57))
+					}
 					switch (winner) {
 						case .first:
 							Text("Jugador 1")
@@ -133,17 +135,15 @@ struct HomeView: View {
 				Color("background")
 				VStack(alignment: .center) {
 					HStack(spacing: 20) {
-						MatButton(action: {}, text: "Jugador 1 X")
+						MatButton(action: {}, text: "Jugador 1 O")
 							.disabled(viewModel.currentPlayer
 									!= .first)
-						MatButton(action: {}, text: "Jugador 2 O")
+						MatButton(action: {}, text: "Jugador 2 X")
 							.disabled(viewModel.currentPlayer
 									!= .second)
 					}
 					if viewModel.winner == .none {
 					VStack {
-						//Text(viewModel.currentPlayer.rawValue)
-						//Text(viewModel.winner.rawValue)
 						Text(viewModel.hasStarted ? "Reiniciar" : "Iniciar la partida")
 							.font(.custom("Poppins-Regular", size: 24))
 							.foregroundColor(Color("font_title"))
@@ -163,7 +163,7 @@ struct HomeView: View {
 					} else {
 						ModalWinnerView(winner: viewModel.winner, reset: viewModel.resetMatch)
 					}
-			}//.frame(maxWidth: .infinity, maxHeight: .infinity)
+			}
 				.padding(.top, 160)
 			}.overlay(alignment: .bottom) {
 				Image("footer")
