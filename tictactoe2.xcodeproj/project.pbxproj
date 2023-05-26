@@ -7,25 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD271FA42A1D525300E9C0CA /* MarkXView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD271FA32A1D525300E9C0CA /* MarkXView.swift */; };
+		AD271FAB2A1E8FBA00E9C0CA /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD271FA62A1E8FBA00E9C0CA /* Poppins-Light.ttf */; };
+		AD271FAC2A1E8FBA00E9C0CA /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD271FA72A1E8FBA00E9C0CA /* Poppins-Regular.ttf */; };
+		AD271FAD2A1E8FBA00E9C0CA /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD271FA82A1E8FBA00E9C0CA /* Poppins-Medium.ttf */; };
+		AD271FAE2A1E8FBA00E9C0CA /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD271FA92A1E8FBA00E9C0CA /* Poppins-Bold.ttf */; };
+		AD271FAF2A1E8FBA00E9C0CA /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD271FAA2A1E8FBA00E9C0CA /* Poppins-SemiBold.ttf */; };
+		AD271FB32A1E91F900E9C0CA /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD271FB22A1E91F900E9C0CA /* Score.swift */; };
+		AD271FB62A1EAC3900E9C0CA /* TicTacViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD271FB52A1EAC3900E9C0CA /* TicTacViewModel.swift */; };
+		AD271FB82A1EACA800E9C0CA /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD271FB72A1EACA800E9C0CA /* Player.swift */; };
+		AD271FC02A1FC26700E9C0CA /* tictactoe2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD271FBF2A1FC26700E9C0CA /* tictactoe2Tests.swift */; };
+		AD58CF972A1FF2DD00154EDF /* MaterialButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58CF962A1FF2DD00154EDF /* MaterialButtonStyle.swift */; };
 		AD994A6C2A1D0E4900EB334C /* tictactoe2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD994A6B2A1D0E4900EB334C /* tictactoe2App.swift */; };
 		AD994A6E2A1D0E4900EB334C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD994A6D2A1D0E4900EB334C /* ContentView.swift */; };
 		AD994A702A1D0E4C00EB334C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD994A6F2A1D0E4C00EB334C /* Assets.xcassets */; };
 		AD994A732A1D0E4C00EB334C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD994A722A1D0E4C00EB334C /* Preview Assets.xcassets */; };
-		AD994A752A1D0E4C00EB334C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD994A742A1D0E4C00EB334C /* Persistence.swift */; };
-		AD994A782A1D0E4C00EB334C /* tictactoe2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD994A762A1D0E4C00EB334C /* tictactoe2.xcdatamodeld */; };
+		AD994A802A1D170300EB334C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD994A7F2A1D170300EB334C /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		AD271FC12A1FC26700E9C0CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD994A602A1D0E4900EB334C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD994A672A1D0E4900EB334C;
+			remoteInfo = tictactoe2;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		AD271FA32A1D525300E9C0CA /* MarkXView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkXView.swift; sourceTree = "<group>"; };
+		AD271FA62A1E8FBA00E9C0CA /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		AD271FA72A1E8FBA00E9C0CA /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		AD271FA82A1E8FBA00E9C0CA /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		AD271FA92A1E8FBA00E9C0CA /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		AD271FAA2A1E8FBA00E9C0CA /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		AD271FB02A1E901400E9C0CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AD271FB22A1E91F900E9C0CA /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		AD271FB52A1EAC3900E9C0CA /* TicTacViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacViewModel.swift; sourceTree = "<group>"; };
+		AD271FB72A1EACA800E9C0CA /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		AD271FBD2A1FC26600E9C0CA /* tictactoe2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tictactoe2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD271FBF2A1FC26700E9C0CA /* tictactoe2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tictactoe2Tests.swift; sourceTree = "<group>"; };
+		AD58CF962A1FF2DD00154EDF /* MaterialButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialButtonStyle.swift; sourceTree = "<group>"; };
 		AD994A682A1D0E4900EB334C /* tictactoe2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tictactoe2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD994A6B2A1D0E4900EB334C /* tictactoe2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tictactoe2App.swift; sourceTree = "<group>"; };
 		AD994A6D2A1D0E4900EB334C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AD994A6F2A1D0E4C00EB334C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD994A722A1D0E4C00EB334C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		AD994A742A1D0E4C00EB334C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		AD994A772A1D0E4C00EB334C /* tictactoe2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = tictactoe2.xcdatamodel; sourceTree = "<group>"; };
+		AD994A7F2A1D170300EB334C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AD271FBA2A1FC26600E9C0CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AD994A652A1D0E4900EB334C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -36,10 +75,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD271FA52A1E8F9E00E9C0CA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AD271FA92A1E8FBA00E9C0CA /* Poppins-Bold.ttf */,
+				AD271FA62A1E8FBA00E9C0CA /* Poppins-Light.ttf */,
+				AD271FA82A1E8FBA00E9C0CA /* Poppins-Medium.ttf */,
+				AD271FA72A1E8FBA00E9C0CA /* Poppins-Regular.ttf */,
+				AD271FAA2A1E8FBA00E9C0CA /* Poppins-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		AD271FB12A1E91DD00E9C0CA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AD271FB22A1E91F900E9C0CA /* Score.swift */,
+				AD271FB72A1EACA800E9C0CA /* Player.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AD271FB42A1EAC1C00E9C0CA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AD271FB52A1EAC3900E9C0CA /* TicTacViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AD271FBE2A1FC26700E9C0CA /* tictactoe2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AD271FBF2A1FC26700E9C0CA /* tictactoe2Tests.swift */,
+			);
+			path = tictactoe2Tests;
+			sourceTree = "<group>";
+		};
+		AD58CF952A1FF2BF00154EDF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AD58CF962A1FF2DD00154EDF /* MaterialButtonStyle.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		AD994A5F2A1D0E4900EB334C = {
 			isa = PBXGroup;
 			children = (
 				AD994A6A2A1D0E4900EB334C /* tictactoe2 */,
+				AD271FBE2A1FC26700E9C0CA /* tictactoe2Tests */,
 				AD994A692A1D0E4900EB334C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				AD994A682A1D0E4900EB334C /* tictactoe2.app */,
+				AD271FBD2A1FC26600E9C0CA /* tictactoe2Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,11 +141,14 @@
 		AD994A6A2A1D0E4900EB334C /* tictactoe2 */ = {
 			isa = PBXGroup;
 			children = (
+				AD271FB42A1EAC1C00E9C0CA /* ViewModels */,
+				AD271FB02A1E901400E9C0CA /* Info.plist */,
+				AD271FB12A1E91DD00E9C0CA /* Models */,
+				AD271FA52A1E8F9E00E9C0CA /* Fonts */,
+				AD994A7E2A1D16EF00EB334C /* Views */,
 				AD994A6B2A1D0E4900EB334C /* tictactoe2App.swift */,
 				AD994A6D2A1D0E4900EB334C /* ContentView.swift */,
 				AD994A6F2A1D0E4C00EB334C /* Assets.xcassets */,
-				AD994A742A1D0E4C00EB334C /* Persistence.swift */,
-				AD994A762A1D0E4C00EB334C /* tictactoe2.xcdatamodeld */,
 				AD994A712A1D0E4C00EB334C /* Preview Content */,
 			);
 			path = tictactoe2;
@@ -73,9 +162,37 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		AD994A7E2A1D16EF00EB334C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD58CF952A1FF2BF00154EDF /* Extensions */,
+				AD994A7F2A1D170300EB334C /* HomeView.swift */,
+				AD271FA32A1D525300E9C0CA /* MarkXView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AD271FBC2A1FC26600E9C0CA /* tictactoe2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD271FC32A1FC26700E9C0CA /* Build configuration list for PBXNativeTarget "tictactoe2Tests" */;
+			buildPhases = (
+				AD271FB92A1FC26600E9C0CA /* Sources */,
+				AD271FBA2A1FC26600E9C0CA /* Frameworks */,
+				AD271FBB2A1FC26600E9C0CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD271FC22A1FC26700E9C0CA /* PBXTargetDependency */,
+			);
+			name = tictactoe2Tests;
+			productName = tictactoe2Tests;
+			productReference = AD271FBD2A1FC26600E9C0CA /* tictactoe2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		AD994A672A1D0E4900EB334C /* tictactoe2 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD994A7B2A1D0E4C00EB334C /* Build configuration list for PBXNativeTarget "tictactoe2" */;
@@ -103,6 +220,10 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					AD271FBC2A1FC26600E9C0CA = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = AD994A672A1D0E4900EB334C;
+					};
 					AD994A672A1D0E4900EB334C = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -122,37 +243,114 @@
 			projectRoot = "";
 			targets = (
 				AD994A672A1D0E4900EB334C /* tictactoe2 */,
+				AD271FBC2A1FC26600E9C0CA /* tictactoe2Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AD271FBB2A1FC26600E9C0CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AD994A662A1D0E4900EB334C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AD994A732A1D0E4C00EB334C /* Preview Assets.xcassets in Resources */,
+				AD271FAF2A1E8FBA00E9C0CA /* Poppins-SemiBold.ttf in Resources */,
+				AD271FAE2A1E8FBA00E9C0CA /* Poppins-Bold.ttf in Resources */,
+				AD271FAB2A1E8FBA00E9C0CA /* Poppins-Light.ttf in Resources */,
 				AD994A702A1D0E4C00EB334C /* Assets.xcassets in Resources */,
+				AD271FAC2A1E8FBA00E9C0CA /* Poppins-Regular.ttf in Resources */,
+				AD271FAD2A1E8FBA00E9C0CA /* Poppins-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AD271FB92A1FC26600E9C0CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD271FC02A1FC26700E9C0CA /* tictactoe2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AD994A642A1D0E4900EB334C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD994A752A1D0E4C00EB334C /* Persistence.swift in Sources */,
-				AD994A782A1D0E4C00EB334C /* tictactoe2.xcdatamodeld in Sources */,
+				AD58CF972A1FF2DD00154EDF /* MaterialButtonStyle.swift in Sources */,
+				AD271FB32A1E91F900E9C0CA /* Score.swift in Sources */,
+				AD271FA42A1D525300E9C0CA /* MarkXView.swift in Sources */,
+				AD271FB62A1EAC3900E9C0CA /* TicTacViewModel.swift in Sources */,
 				AD994A6E2A1D0E4900EB334C /* ContentView.swift in Sources */,
+				AD994A802A1D170300EB334C /* HomeView.swift in Sources */,
+				AD271FB82A1EACA800E9C0CA /* Player.swift in Sources */,
 				AD994A6C2A1D0E4900EB334C /* tictactoe2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		AD271FC22A1FC26700E9C0CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD994A672A1D0E4900EB334C /* tictactoe2 */;
+			targetProxy = AD271FC12A1FC26700E9C0CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		AD271FC42A1FC26700E9C0CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B97JTSGWZ2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shibuyaxpress.tictactoe2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tictactoe2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/tictactoe2";
+			};
+			name = Debug;
+		};
+		AD271FC52A1FC26700E9C0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B97JTSGWZ2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shibuyaxpress.tictactoe2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tictactoe2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/tictactoe2";
+			};
+			name = Release;
+		};
 		AD994A792A1D0E4C00EB334C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -278,6 +476,7 @@
 				DEVELOPMENT_TEAM = B97JTSGWZ2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = tictactoe2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -307,6 +506,7 @@
 				DEVELOPMENT_TEAM = B97JTSGWZ2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = tictactoe2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -328,6 +528,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AD271FC32A1FC26700E9C0CA /* Build configuration list for PBXNativeTarget "tictactoe2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD271FC42A1FC26700E9C0CA /* Debug */,
+				AD271FC52A1FC26700E9C0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AD994A632A1D0E4900EB334C /* Build configuration list for PBXProject "tictactoe2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -347,19 +556,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		AD994A762A1D0E4C00EB334C /* tictactoe2.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				AD994A772A1D0E4C00EB334C /* tictactoe2.xcdatamodel */,
-			);
-			currentVersion = AD994A772A1D0E4C00EB334C /* tictactoe2.xcdatamodel */;
-			path = tictactoe2.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = AD994A602A1D0E4900EB334C /* Project object */;
 }
