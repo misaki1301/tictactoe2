@@ -123,6 +123,7 @@ struct ModalWinnerView: View {
 			.onTapGesture {
 				reset()
 			}
+			
 	}
 }
 
